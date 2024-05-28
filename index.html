@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>I-Fitness Landing Page</title>
+
+</head>
+<body class="container">
+    <header>
+        <nav>
+           <div class="logo-wrapper">
+            <div class="brand-logo">
+                <!--logo-->
+            </div>
+    
+            <label class="hamburger-menu" for="menu">
+                <input type="checkbox" id="menu" name="menu">
+            </label>
+          </div>
+            <div class="nav-links">
+              <div class="gym dropdown">
+                <div class="link">
+                  <span title="Gym Houses" class="dropbtn">
+                    <span>Gym Houses</span>
+
+                     <svg width="20" height="20" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_2005_3)">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.85161 10.9713C8.72659 11.0963 8.55705 11.1665 8.38027 11.1665C8.2035 11.1665 8.03396 11.0963 7.90894 10.9713L4.13761 7.19999C4.07393 7.1385 4.02315 7.06493 3.98821 6.9836C3.95327 6.90226 3.93488 6.81478 3.93411 6.72626C3.93334 6.63774 3.95021 6.54996 3.98373 6.46803C4.01725 6.38609 4.06675 6.31166 4.12934 6.24906C4.19194 6.18647 4.26637 6.13697 4.3483 6.10345C4.43024 6.06993 4.51802 6.05306 4.60654 6.05383C4.69506 6.0546 4.78254 6.07299 4.86388 6.10793C4.94521 6.14287 5.01878 6.19365 5.08027 6.25733L8.38027 9.55733L11.6803 6.25733C11.806 6.13589 11.9744 6.06869 12.1492 6.07021C12.324 6.07173 12.4912 6.14184 12.6148 6.26545C12.7384 6.38905 12.8085 6.55626 12.8101 6.73106C12.8116 6.90586 12.7444 7.07426 12.6229 7.19999L8.85161 10.9713Z" fill="white"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_2005_3">
+                        <rect width="16" height="16" fill="white" transform="translate(0.38028 0.5)"/>
+                        </clipPath>
+                        </defs>
+                    </svg>
+                    </span>
+                 </div>
+
+                    <div class="mobile-location-wrapper">
+                         <div class="city dropdown" data-city="lagos">
+                            <div class="dropbtn">
+                                <span>Lagos </span>
+                
+                                <svg width="20" height="20" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                   <g clip-path="url(#clip0_2005_3)">
+                                   <path fill-rule="evenodd" clip-rule="evenodd" d="M8.85161 10.9713C8.72659 11.0963 8.55705 11.1665 8.38027 11.1665C8.2035 11.1665 8.03396 11.0963 7.90894 10.9713L4.13761 7.19999C4.07393 7.1385 4.02315 7.06493 3.98821 6.9836C3.95327 6.90226 3.93488 6.81478 3.93411 6.72626C3.93334 6.63774 3.95021 6.54996 3.98373 6.46803C4.01725 6.38609 4.06675 6.31166 4.12934 6.24906C4.19194 6.18647 4.26637 6.13697 4.3483 6.10345C4.43024 6.06993 4.51802 6.05306 4.60654 6.05383C4.69506 6.0546 4.78254 6.07299 4.86388 6.10793C4.94521 6.14287 5.01878 6.19365 5.08027 6.25733L8.38027 9.55733L11.6803 6.25733C11.806 6.13589 11.9744 6.06869 12.1492 6.07021C12.324 6.07173 12.4912 6.14184 12.6148 6.26545C12.7384 6.38905 12.8085 6.55626 12.8101 6.73106C12.8116 6.90586 12.7444 7.07426 12.6229 7.19999L8.85161 10.9713Z" fill="white"/>
+                                   </g>
+                                   <defs>
+                                   <clipPath id="clip0_2005_3">
+                                   <rect width="16" height="16" fill="white" transform="translate(0.38028 0.5)"/>
+                                   </clipPath>
+                                   </defs>
+                                   </svg>
+                            </div>
+
+                            <!-- <ul class="area">
+                                <li>AJAH</li>
+                                 <li>AJAH</li>
+                                 <li>AJAH</li>
+                                 <li>AJAH</li>
+                                 <li>AJAH</li>
+                                 <li>AJAH</li>
+                            </ul> -->
+                         </div>
+                         <div class="city dropdown" data-city="abuja">
+                            <div class="dropbtn">
+                                <span>Abuja</span>
+                
+                                <svg width="20" height="20" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                   <g clip-path="url(#clip0_2005_3)">
+                                   <path fill-rule="evenodd" clip-rule="evenodd" d="M8.85161 10.9713C8.72659 11.0963 8.55705 11.1665 8.38027 11.1665C8.2035 11.1665 8.03396 11.0963 7.90894 10.9713L4.13761 7.19999C4.07393 7.1385 4.02315 7.06493 3.98821 6.9836C3.95327 6.90226 3.93488 6.81478 3.93411 6.72626C3.93334 6.63774 3.95021 6.54996 3.98373 6.46803C4.01725 6.38609 4.06675 6.31166 4.12934 6.24906C4.19194 6.18647 4.26637 6.13697 4.3483 6.10345C4.43024 6.06993 4.51802 6.05306 4.60654 6.05383C4.69506 6.0546 4.78254 6.07299 4.86388 6.10793C4.94521 6.14287 5.01878 6.19365 5.08027 6.25733L8.38027 9.55733L11.6803 6.25733C11.806 6.13589 11.9744 6.06869 12.1492 6.07021C12.324 6.07173 12.4912 6.14184 12.6148 6.26545C12.7384 6.38905 12.8085 6.55626 12.8101 6.73106C12.8116 6.90586 12.7444 7.07426 12.6229 7.19999L8.85161 10.9713Z" fill="white"/>
+                                   </g>
+                                   <defs>
+                                   <clipPath id="clip0_2005_3">
+                                   <rect width="16" height="16" fill="white" transform="translate(0.38028 0.5)"/>
+                                   </clipPath>
+                                   </defs>
+                                   </svg>
+                            </div>
+                         </div>
+                         <div class="city dropdown" data-city="pH">
+                            <div class="dropbtn">
+                                <span>Port Harcount</span>
+                
+                                <svg width="20" height="20" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                   <g clip-path="url(#clip0_2005_3)">
+                                   <path fill-rule="evenodd" clip-rule="evenodd" d="M8.85161 10.9713C8.72659 11.0963 8.55705 11.1665 8.38027 11.1665C8.2035 11.1665 8.03396 11.0963 7.90894 10.9713L4.13761 7.19999C4.07393 7.1385 4.02315 7.06493 3.98821 6.9836C3.95327 6.90226 3.93488 6.81478 3.93411 6.72626C3.93334 6.63774 3.95021 6.54996 3.98373 6.46803C4.01725 6.38609 4.06675 6.31166 4.12934 6.24906C4.19194 6.18647 4.26637 6.13697 4.3483 6.10345C4.43024 6.06993 4.51802 6.05306 4.60654 6.05383C4.69506 6.0546 4.78254 6.07299 4.86388 6.10793C4.94521 6.14287 5.01878 6.19365 5.08027 6.25733L8.38027 9.55733L11.6803 6.25733C11.806 6.13589 11.9744 6.06869 12.1492 6.07021C12.324 6.07173 12.4912 6.14184 12.6148 6.26545C12.7384 6.38905 12.8085 6.55626 12.8101 6.73106C12.8116 6.90586 12.7444 7.07426 12.6229 7.19999L8.85161 10.9713Z" fill="white"/>
+                                   </g>
+                                   <defs>
+                                   <clipPath id="clip0_2005_3">
+                                   <rect width="16" height="16" fill="white" transform="translate(0.38028 0.5)"/>
+                                   </clipPath>
+                                   </defs>
+                                   </svg>
+                            </div>
+                         </div>
+                         <div class="city dropdown" data-city="ibadan">
+                            <div class="dropbtn">
+                                <span>Ibadan</span>
+                
+                                <svg width="20" height="20" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                   <g clip-path="url(#clip0_2005_3)">
+                                   <path fill-rule="evenodd" clip-rule="evenodd" d="M8.85161 10.9713C8.72659 11.0963 8.55705 11.1665 8.38027 11.1665C8.2035 11.1665 8.03396 11.0963 7.90894 10.9713L4.13761 7.19999C4.07393 7.1385 4.02315 7.06493 3.98821 6.9836C3.95327 6.90226 3.93488 6.81478 3.93411 6.72626C3.93334 6.63774 3.95021 6.54996 3.98373 6.46803C4.01725 6.38609 4.06675 6.31166 4.12934 6.24906C4.19194 6.18647 4.26637 6.13697 4.3483 6.10345C4.43024 6.06993 4.51802 6.05306 4.60654 6.05383C4.69506 6.0546 4.78254 6.07299 4.86388 6.10793C4.94521 6.14287 5.01878 6.19365 5.08027 6.25733L8.38027 9.55733L11.6803 6.25733C11.806 6.13589 11.9744 6.06869 12.1492 6.07021C12.324 6.07173 12.4912 6.14184 12.6148 6.26545C12.7384 6.38905 12.8085 6.55626 12.8101 6.73106C12.8116 6.90586 12.7444 7.07426 12.6229 7.19999L8.85161 10.9713Z" fill="white"/>
+                                   </g>
+                                   <defs>
+                                   <clipPath id="clip0_2005_3">
+                                   <rect width="16" height="16" fill="white" transform="translate(0.38028 0.5)"/>
+                                   </clipPath>
+                                   </defs>
+                                   </svg>
+                            </div>
+                         </div>
+                           
+    
+                        </div>
+
+                        <!---for desktop-->
+                        <div class="desktop-location-wrapper">
+                            <h3>Find a center near you</h3>
+                            <div class="states-wrapper">
+                            <div class="states">
+                            <div class="city dropdown open" data-city="lagos">
+                    
+                                   <span>Lagos </span>
+
+                                   <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_1_4076)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.7803 8.46976C11.9209 8.61041 11.9999 8.80114 11.9999 9.00001C11.9999 9.19889 11.9209 9.38962 11.7803 9.53026L7.53751 13.773C7.46833 13.8446 7.38557 13.9018 7.29407 13.9411C7.20256 13.9804 7.10415 14.0011 7.00456 14.002C6.90498 14.0028 6.80622 13.9838 6.71405 13.9461C6.62188 13.9084 6.53814 13.8527 6.46772 13.7823C6.3973 13.7119 6.34161 13.6282 6.3039 13.536C6.26619 13.4438 6.24721 13.345 6.24808 13.2455C6.24894 13.1459 6.26963 13.0475 6.30894 12.956C6.34824 12.8645 6.40538 12.7817 6.47701 12.7125L10.1895 9.00001L6.47701 5.28751C6.34039 5.14606 6.2648 4.95661 6.26651 4.75996C6.26822 4.56331 6.34709 4.37521 6.48615 4.23615C6.6252 4.09709 6.81331 4.01822 7.00996 4.01651C7.20661 4.0148 7.39606 4.09039 7.53751 4.22701L11.7803 8.46976Z" fill="#595A60"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_1_4076">
+                                    <rect width="18" height="18" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                    </svg>
+                               
+                            </div>
+                            <div class="city dropdown" data-city="abuja">
+                             
+                                   <span>Abuja</span>
+
+                                   <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_1_4076)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.7803 8.46976C11.9209 8.61041 11.9999 8.80114 11.9999 9.00001C11.9999 9.19889 11.9209 9.38962 11.7803 9.53026L7.53751 13.773C7.46833 13.8446 7.38557 13.9018 7.29407 13.9411C7.20256 13.9804 7.10415 14.0011 7.00456 14.002C6.90498 14.0028 6.80622 13.9838 6.71405 13.9461C6.62188 13.9084 6.53814 13.8527 6.46772 13.7823C6.3973 13.7119 6.34161 13.6282 6.3039 13.536C6.26619 13.4438 6.24721 13.345 6.24808 13.2455C6.24894 13.1459 6.26963 13.0475 6.30894 12.956C6.34824 12.8645 6.40538 12.7817 6.47701 12.7125L10.1895 9.00001L6.47701 5.28751C6.34039 5.14606 6.2648 4.95661 6.26651 4.75996C6.26822 4.56331 6.34709 4.37521 6.48615 4.23615C6.6252 4.09709 6.81331 4.01822 7.00996 4.01651C7.20661 4.0148 7.39606 4.09039 7.53751 4.22701L11.7803 8.46976Z" fill="#595A60"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_1_4076">
+                                    <rect width="18" height="18" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                    </svg>
+                            
+                            </div>
+                            <div class="city dropdown" data-city="pH">
+                        
+                                   <span>Port Harcount</span>
+                   
+                                   <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_1_4076)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.7803 8.46976C11.9209 8.61041 11.9999 8.80114 11.9999 9.00001C11.9999 9.19889 11.9209 9.38962 11.7803 9.53026L7.53751 13.773C7.46833 13.8446 7.38557 13.9018 7.29407 13.9411C7.20256 13.9804 7.10415 14.0011 7.00456 14.002C6.90498 14.0028 6.80622 13.9838 6.71405 13.9461C6.62188 13.9084 6.53814 13.8527 6.46772 13.7823C6.3973 13.7119 6.34161 13.6282 6.3039 13.536C6.26619 13.4438 6.24721 13.345 6.24808 13.2455C6.24894 13.1459 6.26963 13.0475 6.30894 12.956C6.34824 12.8645 6.40538 12.7817 6.47701 12.7125L10.1895 9.00001L6.47701 5.28751C6.34039 5.14606 6.2648 4.95661 6.26651 4.75996C6.26822 4.56331 6.34709 4.37521 6.48615 4.23615C6.6252 4.09709 6.81331 4.01822 7.00996 4.01651C7.20661 4.0148 7.39606 4.09039 7.53751 4.22701L11.7803 8.46976Z" fill="#595A60"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_1_4076">
+                                    <rect width="18" height="18" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                    </svg>
+                               
+                            </div>
+                            <div class="city dropdown" data-city="ibadan">
+
+                                   <span>Ibadan</span>
+                   
+                                   <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_1_4076)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.7803 8.46976C11.9209 8.61041 11.9999 8.80114 11.9999 9.00001C11.9999 9.19889 11.9209 9.38962 11.7803 9.53026L7.53751 13.773C7.46833 13.8446 7.38557 13.9018 7.29407 13.9411C7.20256 13.9804 7.10415 14.0011 7.00456 14.002C6.90498 14.0028 6.80622 13.9838 6.71405 13.9461C6.62188 13.9084 6.53814 13.8527 6.46772 13.7823C6.3973 13.7119 6.34161 13.6282 6.3039 13.536C6.26619 13.4438 6.24721 13.345 6.24808 13.2455C6.24894 13.1459 6.26963 13.0475 6.30894 12.956C6.34824 12.8645 6.40538 12.7817 6.47701 12.7125L10.1895 9.00001L6.47701 5.28751C6.34039 5.14606 6.2648 4.95661 6.26651 4.75996C6.26822 4.56331 6.34709 4.37521 6.48615 4.23615C6.6252 4.09709 6.81331 4.01822 7.00996 4.01651C7.20661 4.0148 7.39606 4.09039 7.53751 4.22701L11.7803 8.46976Z" fill="#595A60"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_1_4076">
+                                    <rect width="18" height="18" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                    </svg>
+                            
+                            </div>
+                        </div>
+
+                           <ul class="area">
+                                <!-- <li>lekki</li> 
+                                <li>lekki</li> 
+                                <li>lekki</li> 
+                                <li>lekki</li> 
+                                <li>lekki</li>
+                                <li>lekki</li> 
+                                <li>lekki</li> 
+                                <li>lekki</li> 
+                                <li>lekki</li> 
+                                <li>lekki</li> -->
+                           </ul>
+                        </div> 
+                          
+                      </div> 
+
+
+
+                    </div>
+
+            
+                <div class="link"><a href="#" title="Corporate">Corporate</a></div>
+                <div class="link"><a href="#" title="Deals">Deals</a></div>
+                <div class="link"><a href="#" title="Shop">Shop</a></div>
+                <div class="link"><a href="#" title="About Us">About us</a></div>
+             </div>
+        </nav>
+        <button class="btn join-btn">Join us</button>
+    </header>
+
+    <main>
+        <section class="row">
+            <div class="col-6 hero">
+                <h1>It's more than just exercise, it's about achieving <span>fitness</span></h1>
+
+                <p>At our gym, you'll experience a comprehensive approach to health and wellness.
+                     Get supports your goals and help you to reach your full potential.
+                </p>
+                <button class="btn hero-btn">Get Started</button>
+            </div>
+            <div class="col-6 hero-bg">
+                   <!--background image-->
+            </div>
+
+        </section> 
+        <section class="row">
+            <div class="col-12 about">
+                <div class="about-content">
+                  <span>WHO WE ARE</span>
+          
+                <div class="about-txt">
+                <h2>The leading and fastest-growing fitness chain</h2>
+                <p>
+                  We are a 360-health and wellness company. With over 200 professionally certified personal trainers, 
+                  ultra-modern gym facilities and over 40 free fitness classes weekly, we give our members a holistic experience to suit and support their fitness lifestyle.
+                </p>
+            </div>
+            </div>
+            <div class="about-icons-wrapper">
+                  <div class="icon">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 15.9996C18.3137 15.9996 21 13.3134 21 9.9998C21 6.6862 18.3137 4 15 4C11.6863 4 9 6.6862 9 9.9998C9 13.3134 11.6863 15.9996 15 15.9996ZM4 21.5356C4 19.583 5.58298 18 7.53568 18H17.0703C16.3896 19.1767 16 20.5428 16 22C16 24.3894 17.0475 26.5342 18.7084 28H16.5357C14.162 28 12.1373 29.494 11.3505 31.5928C8.35312 30.8602 6.49534 29.2256 5.40172 27.4054C3.99988 25.072 3.99998 22.671 4 22.2544V21.5356ZM32.0002 22C32.0002 20.5428 31.6108 19.1767 30.93 18H40.4644C42.417 18 44 19.583 44 21.5356V22.2544C44 22.671 44.0002 25.072 42.5982 27.4054C41.5046 29.2256 39.6468 30.8602 36.6494 31.5928C35.8626 29.494 33.838 28 31.4644 28H29.2918C30.9528 26.5342 32.0002 24.3894 32.0002 22ZM39 9.9998C39 13.3134 36.3138 15.9996 33 15.9996C29.6862 15.9996 27 13.3134 27 9.9998C27 6.6862 29.6862 4 33 4C36.3138 4 39 6.6862 39 9.9998ZM13 33.5356C13 31.583 14.583 30 16.5357 30H31.4644C33.417 30 35 31.583 35 33.5356V34.2544C35 34.671 35.0002 37.072 33.5982 39.4054C32.1156 41.8734 29.228 44 24 44C18.7719 44 15.8845 41.8734 14.4017 39.4054C12.9999 37.072 13 34.671 13 34.2544V33.5356ZM24 27.9996C27.3138 27.9996 30 25.3134 30 21.9998C30 18.6862 27.3138 16 24 16C20.6862 16 18 18.6862 18 21.9998C18 25.3134 20.6862 27.9996 24 27.9996Z" fill="#F60C01"/>
+                     </svg>
+                        
+                    <div class="txt">
+                      <span>600k+ Users</span>
+                      <span>of i-Fitness services monthly</span>
+                   </div>
+                  </div>  
+                  
+                  <div class="icon">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_1_2771)">
+                        <path d="M24 4C35.046 4 44 12.954 44 24C44 35.046 35.046 44 24 44C12.954 44 4 35.046 4 24C4 12.954 12.954 4 24 4ZM24 12C23.4696 12 22.9609 12.2107 22.5858 12.5858C22.2107 12.9609 22 13.4696 22 14V24C22.0001 24.5304 22.2109 25.039 22.586 25.414L28.586 31.414C28.9632 31.7783 29.4684 31.9799 29.9928 31.9753C30.5172 31.9708 31.0188 31.7605 31.3896 31.3896C31.7605 31.0188 31.9708 30.5172 31.9753 29.9928C31.9799 29.4684 31.7783 28.9632 31.414 28.586L26 23.172V14C26 13.4696 25.7893 12.9609 25.4142 12.5858C25.0391 12.2107 24.5304 12 24 12Z" fill="#F60C01"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_1_2771">
+                        <rect width="48" height="48" fill="white"/>
+                        </clipPath>
+                        </defs>
+                    </svg>
+                        
+                   <div class="txt">
+                    <span>87.99% Open</span>
+                    <span>everyday in all our gym houses </span>
+                   </div>
+                  </div> 
+                  
+                  <div class="icon">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22 35C22 32.422 22.7504 30.0194 24.0446 27.9984H10.5056C8.02151 27.9984 6.00781 30.0122 6.00781 32.4962V34.3362C6.00781 35.4802 6.36461 36.596 7.02853 37.5278C10.1129 41.8564 15.1588 44.0008 22.0008 44.0008C23.2004 44.0008 24.345 43.9348 25.4336 43.8028C23.3018 41.4872 22 38.3956 22 35ZM22.0008 4.00781C27.5236 4.00781 32.0008 8.48495 32.0008 14.0078C32.0008 19.5307 27.5236 24.0078 22.0008 24.0078C16.4779 24.0078 12.0007 19.5307 12.0007 14.0078C12.0007 8.48495 16.4779 4.00781 22.0008 4.00781ZM46 35C46 41.0752 41.0752 46 35 46C28.9248 46 24 41.0752 24 35C24 28.9248 28.9248 24 35 24C41.0752 24 46 28.9248 46 35ZM36.1108 28.8412C35.7612 27.7196 34.2388 27.7196 33.8892 28.8412L32.7752 32.4154H29.1702C28.0388 32.4154 27.5684 33.9246 28.4836 34.6178L31.4002 36.8268L30.2862 40.4008C29.9366 41.5224 31.168 42.4552 32.0834 41.762L35 39.5532L37.9166 41.762C38.832 42.4552 40.0634 41.5224 39.7138 40.4008L38.5998 36.8268L41.5164 34.6178C42.4316 33.9246 41.9612 32.4154 40.8298 32.4154H37.2248L36.1108 28.8412Z" fill="#F60C01"/>
+                    </svg>
+                        
+                    <div class="txt">
+                    <span>250+ Trainers</span>
+                    <span>for any program of your choice</span>
+                  </div>
+                  </div>  
+                  
+                  <div class="icon">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M24 43.2001C29.0922 43.2001 33.9758 41.1772 37.5765 37.5765C41.1772 33.9758 43.2001 29.0922 43.2001 24C43.2001 18.9079 41.1772 14.0243 37.5765 10.4236C33.9758 6.8229 29.0922 4.80005 24 4.80005C18.9079 4.80005 14.0243 6.8229 10.4236 10.4236C6.8229 14.0243 4.80005 18.9079 4.80005 24C4.80005 29.0922 6.8229 33.9758 10.4236 37.5765C14.0243 41.1772 18.9079 43.2001 24 43.2001V43.2001ZM10.3968 19.2649C11.2879 16.713 12.8779 14.4627 14.9856 12.7704C15.6288 13.752 16.7376 14.4 18 14.4C18.9548 14.4 19.8705 14.7793 20.5456 15.4545C21.2208 16.1296 21.6 17.0453 21.6 18V19.2C21.6 20.4731 22.1058 21.694 23.0059 22.5942C23.9061 23.4943 25.127 24 26.4 24C27.6731 24 28.894 23.4943 29.7942 22.5942C30.6943 21.694 31.2 20.4731 31.2 19.2C31.1997 18.1259 31.5596 17.0826 32.2223 16.2372C32.885 15.3917 33.8121 14.793 34.8552 14.5368C37.1456 17.1569 38.4054 20.5201 38.4001 24C38.4001 24.816 38.3328 25.62 38.2008 26.4H36.0001C34.727 26.4 33.5061 26.9058 32.6059 27.8059C31.7058 28.7061 31.2 29.927 31.2 31.2V36.4728C29.012 37.7389 26.528 38.4037 24 38.4001V33.6C24 32.327 23.4943 31.1061 22.5942 30.2059C21.694 29.3058 20.4731 28.8 19.2 28.8C17.927 28.8 16.7061 28.2943 15.8059 27.3942C14.9058 26.494 14.4 25.2731 14.4 24C14.4005 22.8648 13.9985 21.7662 13.2656 20.8993C12.5327 20.0324 11.5163 19.4533 10.3968 19.2649V19.2649Z" fill="#F60C01"/>
+                        </svg>
+                        
+                    <div class="txt">
+                    <span>21+ Gym houses</span>
+                    <span>available across Nigeria</span>
+                   </div>
+                  </div>
+            </div>
+            </div>
+
+        </section>
+
+        <section class="row">
+            <div class="col-12 programs">
+                <div class="programs-content">
+                    <span>WHY i-FITNESS</span>
+
+                    <div class="faq-wrapper">
+                        <details name="program" data-picture="exercise" open id="exercise">
+                            <summary>
+                                <span class="faq-title">
+                                    Wide range of fitness programs
+                                </span>
+                            </summary>
+                            <p>
+                                Our timetable offers a wide range of low to high-intensity fitness programmes
+                                 to suit your fitness lifestyle. There’s something for everyone!
+                            </p>
+
+                        </details>    
+                        
+                        <details name="program" data-picture="community" id="community">
+                            <summary>
+                                <span class="faq-title">
+                                    Supportive Community
+                                </span>
+                            </summary>
+                            <p>
+                                Enjoy a sense of belonging in a community that 
+                                supports your fitness goals and reminds you that you are not alone!
+                            </p>
+
+                        </details>   
+
+                         <details name="program" data-picture="facilities" id="facilities">
+                            <summary>
+                                <span class="faq-title">
+                                    Ultra-modern Facilities
+                                </span>
+                            </summary>
+                            <p>
+                                Enjoy a sense of belonging in a community that
+                                 supports your fitness goals and reminds you that you are not alone!
+
+                            </p>
+
+                        </details>
+                    </div>
+
+
+                </div>
+
+
+         
+                
+
+                <figure class="programs-bg">
+                    <img src="images/exercise.png" title="exercise">
+                </figure>
+            </div>
+        </section>
+
+
+        <section class="row">
+            <div class="col-12 classes">
+                <div class="classes-content">
+                      <h3>Explore our all inclusive classes</h3>
+                      <p>
+                        Our diverse class offerings cater to all fitness levels. 
+                        Join us to find the perfect workout for your goals and enjoy a supportive community atmosphere.
+                      </p>
+                </div>
+                
+                <div class="classes-carousel">
+                    <div class="class-card">
+                         
+                         <figure class="card-img">
+                             <!---image-->
+                         </figure>
+                       <div class="card-content">
+                         <span>Tabata</span>
+                         <p>Experience the efficiency of a High-Intensity Interval 
+                            Training (HIIT) workout, designed to maximize results in a short amount of time. 
+                        </p>
+                       </div>
+                    </div>
+
+                    <div class="class-card">
+                    
+                         <figure class="card-img">
+                                <!---image-->
+                         </figure>
+
+                       <div class="card-content">
+                         <span>Les Mills Grit</span>
+                         <p>By dedicating just a few short sessions each week to exercise,
+                             you can significantly enhance your overall fitness levels.  
+                        </p>
+                       </div>
+                    </div>   
+
+
+                    <div class="class-card">
+                   
+                         <figure class="card-img">
+                            <!---image-->
+                        </figure>
+
+                       <div class="card-content">
+                         <span>Aerobics</span>
+                         <p>
+                            Kickstart your weekend with energy and
+                             enthusiasm by joining us every Saturday morning for our i-Fitness aerobics classes. 
+                        </p>
+                       </div>
+                    </div>   
+
+
+                    <div class="class-card">
+                         <!---image-->
+                         <figure class="card-img">
+                            <!---image-->
+                        </figure>
+
+
+
+                       <div class="card-content">
+                         <span>Spinning</span>
+                         <p>
+                            Designed for individuals of all fitness levels,
+                             our spinning class offers a low-impact workout experience that promotes cardiovascular health. 
+                        </p>
+                       </div>
+                    </div> 
+
+                    <div class="class-card">
+                         <!---image-->
+                        <figure class="card-img">
+                            <!---image-->
+                        </figure>
+
+                       <div class="card-content">
+                         <span>Yoga</span>
+                         <p>
+                            Our yoga classes offer a holistic approach to wellness by nurturing both your mind and body. 
+                            Achieve a sense of inner calm and physical balance.
+                        </p>
+                       </div>
+                    </div>
+
+                    <div class="class-card">
+
+                        <figure class="card-img">
+                            <!---image-->
+                        </figure>
+
+                      <div class="card-content">
+                        <span>Core Cardio</span>
+                        <p>
+                            Our core cardio classes are meticulously crafted to guide you towards achieving your fitness aspirations,
+                             providing a effective workout experience for you.
+                       </p>
+                      </div>
+                   </div>      
+                   
+                   
+                         <div class="class-card">
+                            <figure class="card-img">
+                                <!---image-->
+                            </figure>
+    
+                       <div class="card-content">
+                         <span>Tabata</span>
+                         <p>Experience the efficiency of a High-Intensity Interval 
+                            Training (HIIT) workout, designed to maximize results in a short amount of time. 
+                        </p>
+                       </div>
+                    </div>
+
+                    <div class="class-card">
+
+                        <figure class="card-img">
+                            <!---image-->
+                        </figure>
+
+                       <div class="card-content">
+                         <span>Les Mills Grit</span>
+                         <p>By dedicating just a few short sessions each week to exercise,
+                             you can significantly enhance your overall fitness levels.  
+                        </p>
+                       </div>
+                    </div>   
+
+
+                    <div class="class-card">
+                         <!---image-->
+                       <figure class="card-img">
+                            <!---image-->
+                        </figure>
+
+
+                       <div class="card-content">
+                         <span>Aerobics</span>
+                         <p>
+                            Kickstart your weekend with energy and
+                             enthusiasm by joining us every Saturday morning for our i-Fitness aerobics classes. 
+                        </p>
+                       </div>
+                    </div>   
+
+
+                    <div class="class-card">
+
+                       <figure class="card-img">
+                            <!---image-->
+                        </figure>
+
+                       <div class="card-content">
+                         <span>Spinning</span>
+                         <p>
+                            Designed for individuals of all fitness levels,
+                             our spinning class offers a low-impact workout experience that promotes cardiovascular health. 
+                        </p>
+                       </div>
+                    </div> 
+
+                    <div class="class-card">
+
+                      <figure class="card-img">
+                            <!---image-->
+                        </figure>
+
+                       <div class="card-content">
+                         <span>Yoga</span>
+                         <p>
+                            Our yoga classes offer a holistic approach to wellness by nurturing both your mind and body. 
+                            Achieve a sense of inner calm and physical balance.
+                        </p>
+                       </div>
+                    </div>
+
+                    <div class="class-card">
+                        <!---image-->
+                       <figure class="card-img">
+                            <!---image-->
+                        </figure>
+
+                      <div class="card-content">
+                        <span>Core Cardio</span>
+                        <p>
+                            Our core cardio classes are meticulously crafted to guide you towards achieving your fitness aspirations,
+                             providing a effective workout experience for you.
+                       </p>
+                      </div>
+                   </div>   
+
+                </div>
+                  
+                 <div class="carousel-controls">
+                          <button class="btn left-btn"></button>
+                          <button class="btn right-btn"></button>
+                 </div>
+
+            </div>
+        </section>
+
+           <section class="row">
+               <div class="col-12 newsletter">
+
+                    <div class="news-card">
+                        <div class="news-content">
+                            <h3>Latest News, Events & Updates</h3>
+                            <p>Stay informed about our gym's latest happenings, from exciting events and
+                                workshops to important announcements and fitness tips.
+                            </p>
+                        </div>
+
+                        <div class="news-email">
+                            <input type="email" placeholder="Enter email" name="email">
+                            <button type="button" class="btn news-btn">Stay updated</button>
+                        </div>
+
+                    </div>
+               </div>
+           </section>
+
+
+           <section class="row">
+              <div class="col-12 customers">
+                  <div class="cust-content">
+                      <h3>What our customers are saying</h3>
+                      <p>Hear from our satisfied members as they share their experiences and successes.
+                         Hear firsthand how our gym has transformed lives and exceeded expectations.
+                        </p>
+                  </div>
+
+                  <div class="slider-container">
+                     <div class="reviews-wrapper">
+
+                          <div class="review-card">
+                                  <p>“Great place to work out. Excellent facility that is highly maintained by the friendly staff.
+                                     Fees are okay for how much you get. Lots of other activities like yoga, spinning, HIIT,
+                                      aerobics all taught by highly trained instructors come with your monthly subscription.”
+                                    </p>
+
+                                  <div class="review-profile">
+                                    <img src="assets/emeka.svg" title="Emeka Albert">
+                                        
+                                      <div class="info">
+                                         <h5>Emeka Albert</h5>
+                                         <svg width="96" height="16" viewBox="0 0 96 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" fill="#FFCD03"/>
+                                            <path d="M28 0L29.7961 5.52786H35.6085L30.9062 8.94427L32.7023 14.4721L28 11.0557L23.2977 14.4721L25.0938 8.94427L20.3915 5.52786H26.2039L28 0Z" fill="#FFCD03"/>
+                                            <path d="M48 0L49.7961 5.52786H55.6085L50.9062 8.94427L52.7023 14.4721L48 11.0557L43.2977 14.4721L45.0938 8.94427L40.3915 5.52786H46.2039L48 0Z" fill="#FFCD03"/>
+                                            <path d="M68 0L69.7961 5.52786H75.6085L70.9062 8.94427L72.7023 14.4721L68 11.0557L63.2977 14.4721L65.0938 8.94427L60.3915 5.52786H66.2039L68 0Z" fill="#FFCD03"/>
+                                            <path d="M88 0L89.7961 5.52786H95.6085L90.9062 8.94427L92.7023 14.4721L88 11.0557L83.2977 14.4721L85.0938 8.94427L80.3915 5.52786H86.2039L88 0Z" fill="#FFCD03"/>
+                                        </svg>
+                                            
+                                      </div>
+                                  </div>
+                          </div> 
+
+                          <div class="review-card">
+                                  <p>
+                                    “Absolutely love this gym! The facilities are top-notch and always impeccably maintained,
+                                   thanks to the attentive and welcoming staff. It's a complete package for anyone looking to elevate their fitness journey!"
+                                  </p>
+
+
+                                  <div class="review-profile">
+                                    <img src="assets/josephine.svg" title="Josephine Owens">
+                                        
+                                      <div class="info">
+                                         <h5>Josephine Owens</h5>
+
+                                         <svg width="96" height="16" viewBox="0 0 96 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" fill="#FFCD03"/>
+                                            <path d="M28 0L29.7961 5.52786H35.6085L30.9062 8.94427L32.7023 14.4721L28 11.0557L23.2977 14.4721L25.0938 8.94427L20.3915 5.52786H26.2039L28 0Z" fill="#FFCD03"/>
+                                            <path d="M48 0L49.7961 5.52786H55.6085L50.9062 8.94427L52.7023 14.4721L48 11.0557L43.2977 14.4721L45.0938 8.94427L40.3915 5.52786H46.2039L48 0Z" fill="#FFCD03"/>
+                                            <path d="M68 0L69.7961 5.52786H75.6085L70.9062 8.94427L72.7023 14.4721L68 11.0557L63.2977 14.4721L65.0938 8.94427L60.3915 5.52786H66.2039L68 0Z" fill="#FFCD03"/>
+                                            <path d="M88 0L89.7961 5.52786H95.6085L90.9062 8.94427L92.7023 14.4721L88 11.0557L83.2977 14.4721L85.0938 8.94427L80.3915 5.52786H86.2039L88 0Z" fill="#FFCD03"/>
+                                        </svg>
+                                            
+                                      </div>
+                                  </div>
+                          </div>   
+                          
+                          <div class="review-card">
+                                      <p>
+                                        “An exceptional fitness destination! The facility is top-notch, impeccably maintained by a welcoming staff. 
+                                        The membership fees are reasonable considering the abundance of offerings - from yoga and spinning to HIIT and aerobics,
+                                         all led by expert instructors. Truly a holistic fitness experience!”
+
+                                      </p>
+ 
+
+                                  <div class="review-profile">
+                                    <img src="assets/ibrahim.svg" title="Ibrahim Balogun">
+                                        
+                                      <div class="info">
+                                         <h5>Ibrahim Balogun</h5>
+
+                                         <svg width="96" height="16" viewBox="0 0 96 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" fill="#FFCD03"/>
+                                            <path d="M28 0L29.7961 5.52786H35.6085L30.9062 8.94427L32.7023 14.4721L28 11.0557L23.2977 14.4721L25.0938 8.94427L20.3915 5.52786H26.2039L28 0Z" fill="#FFCD03"/>
+                                            <path d="M48 0L49.7961 5.52786H55.6085L50.9062 8.94427L52.7023 14.4721L48 11.0557L43.2977 14.4721L45.0938 8.94427L40.3915 5.52786H46.2039L48 0Z" fill="#FFCD03"/>
+                                            <path d="M68 0L69.7961 5.52786H75.6085L70.9062 8.94427L72.7023 14.4721L68 11.0557L63.2977 14.4721L65.0938 8.94427L60.3915 5.52786H66.2039L68 0Z" fill="#FFCD03"/>
+                                            <path d="M88 0L89.7961 5.52786H95.6085L90.9062 8.94427L92.7023 14.4721L88 11.0557L83.2977 14.4721L85.0938 8.94427L80.3915 5.52786H86.2039L88 0Z" fill="#A1A3A8"/>
+                                        </svg>
+                                            
+                                            
+                                      </div>
+                                  </div>
+                          </div>    
+
+
+                            <div class="review-card">
+                                  <p>“Great place to work out. Excellent facility that is highly maintained by the friendly staff.
+                                     Fees are okay for how much you get. Lots of other activities like yoga, spinning, HIIT,
+                                      aerobics all taught by highly trained instructors come with your monthly subscription.”
+                                    </p>
+
+                                  <div class="review-profile">
+                                    <img src="assets/emeka.svg" title="Emeka Albert">
+                                        
+                                      <div class="info">
+                                         <h5>Emeka Albert</h5>
+                                         <svg width="96" height="16" viewBox="0 0 96 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" fill="#FFCD03"/>
+                                            <path d="M28 0L29.7961 5.52786H35.6085L30.9062 8.94427L32.7023 14.4721L28 11.0557L23.2977 14.4721L25.0938 8.94427L20.3915 5.52786H26.2039L28 0Z" fill="#FFCD03"/>
+                                            <path d="M48 0L49.7961 5.52786H55.6085L50.9062 8.94427L52.7023 14.4721L48 11.0557L43.2977 14.4721L45.0938 8.94427L40.3915 5.52786H46.2039L48 0Z" fill="#FFCD03"/>
+                                            <path d="M68 0L69.7961 5.52786H75.6085L70.9062 8.94427L72.7023 14.4721L68 11.0557L63.2977 14.4721L65.0938 8.94427L60.3915 5.52786H66.2039L68 0Z" fill="#FFCD03"/>
+                                            <path d="M88 0L89.7961 5.52786H95.6085L90.9062 8.94427L92.7023 14.4721L88 11.0557L83.2977 14.4721L85.0938 8.94427L80.3915 5.52786H86.2039L88 0Z" fill="#FFCD03"/>
+                                        </svg>
+                                            
+                                      </div>
+                                  </div>
+                          </div> 
+
+                          <div class="review-card">
+                                  <p>
+                                    “Absolutely love this gym! The facilities are top-notch and always impeccably maintained,
+                                   thanks to the attentive and welcoming staff. It's a complete package for anyone looking to elevate their fitness journey!"
+                                  </p>
+
+
+                                  <div class="review-profile">
+                                    <img src="assets/josephine.svg" title="Josephine Owens">
+                                        
+                                      <div class="info">
+                                         <h5>Josephine Owens</h5>
+
+                                         <svg width="96" height="16" viewBox="0 0 96 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" fill="#FFCD03"/>
+                                            <path d="M28 0L29.7961 5.52786H35.6085L30.9062 8.94427L32.7023 14.4721L28 11.0557L23.2977 14.4721L25.0938 8.94427L20.3915 5.52786H26.2039L28 0Z" fill="#FFCD03"/>
+                                            <path d="M48 0L49.7961 5.52786H55.6085L50.9062 8.94427L52.7023 14.4721L48 11.0557L43.2977 14.4721L45.0938 8.94427L40.3915 5.52786H46.2039L48 0Z" fill="#FFCD03"/>
+                                            <path d="M68 0L69.7961 5.52786H75.6085L70.9062 8.94427L72.7023 14.4721L68 11.0557L63.2977 14.4721L65.0938 8.94427L60.3915 5.52786H66.2039L68 0Z" fill="#FFCD03"/>
+                                            <path d="M88 0L89.7961 5.52786H95.6085L90.9062 8.94427L92.7023 14.4721L88 11.0557L83.2977 14.4721L85.0938 8.94427L80.3915 5.52786H86.2039L88 0Z" fill="#FFCD03"/>
+                                        </svg>
+                                            
+                                      </div>
+                                  </div>
+                          </div>   
+                          
+                          <div class="review-card">
+                                      <p>
+                                        “An exceptional fitness destination! The facility is top-notch, impeccably maintained by a welcoming staff. 
+                                        The membership fees are reasonable considering the abundance of offerings - from yoga and spinning to HIIT and aerobics,
+                                         all led by expert instructors. Truly a holistic fitness experience!”
+
+                                      </p>
+ 
+
+                                  <div class="review-profile">
+                                    <img src="assets/ibrahim.svg" title="Ibrahim Balogun">
+                                        
+                                      <div class="info">
+                                         <h5>Ibrahim Balogun</h5>
+
+                                         <svg width="96" height="16" viewBox="0 0 96 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" fill="#FFCD03"/>
+                                            <path d="M28 0L29.7961 5.52786H35.6085L30.9062 8.94427L32.7023 14.4721L28 11.0557L23.2977 14.4721L25.0938 8.94427L20.3915 5.52786H26.2039L28 0Z" fill="#FFCD03"/>
+                                            <path d="M48 0L49.7961 5.52786H55.6085L50.9062 8.94427L52.7023 14.4721L48 11.0557L43.2977 14.4721L45.0938 8.94427L40.3915 5.52786H46.2039L48 0Z" fill="#FFCD03"/>
+                                            <path d="M68 0L69.7961 5.52786H75.6085L70.9062 8.94427L72.7023 14.4721L68 11.0557L63.2977 14.4721L65.0938 8.94427L60.3915 5.52786H66.2039L68 0Z" fill="#FFCD03"/>
+                                            <path d="M88 0L89.7961 5.52786H95.6085L90.9062 8.94427L92.7023 14.4721L88 11.0557L83.2977 14.4721L85.0938 8.94427L80.3915 5.52786H86.2039L88 0Z" fill="#A1A3A8"/>
+                                        </svg>
+                                            
+                                            
+                                      </div>
+                                  </div>
+                          </div>    
+                          
+                          
+                          
+                          <div class="review-card">
+                                  <p>“Great place to work out. Excellent facility that is highly maintained by the friendly staff.
+                                     Fees are okay for how much you get. Lots of other activities like yoga, spinning, HIIT,
+                                      aerobics all taught by highly trained instructors come with your monthly subscription.”
+                                    </p>
+
+                                  <div class="review-profile">
+                                    <img src="assets/emeka.svg" title="Emeka Albert">
+                                        
+                                      <div class="info">
+                                         <h5>Emeka Albert</h5>
+                                         <svg width="96" height="16" viewBox="0 0 96 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" fill="#FFCD03"/>
+                                            <path d="M28 0L29.7961 5.52786H35.6085L30.9062 8.94427L32.7023 14.4721L28 11.0557L23.2977 14.4721L25.0938 8.94427L20.3915 5.52786H26.2039L28 0Z" fill="#FFCD03"/>
+                                            <path d="M48 0L49.7961 5.52786H55.6085L50.9062 8.94427L52.7023 14.4721L48 11.0557L43.2977 14.4721L45.0938 8.94427L40.3915 5.52786H46.2039L48 0Z" fill="#FFCD03"/>
+                                            <path d="M68 0L69.7961 5.52786H75.6085L70.9062 8.94427L72.7023 14.4721L68 11.0557L63.2977 14.4721L65.0938 8.94427L60.3915 5.52786H66.2039L68 0Z" fill="#FFCD03"/>
+                                            <path d="M88 0L89.7961 5.52786H95.6085L90.9062 8.94427L92.7023 14.4721L88 11.0557L83.2977 14.4721L85.0938 8.94427L80.3915 5.52786H86.2039L88 0Z" fill="#FFCD03"/>
+                                        </svg>
+                                            
+                                      </div>
+                                  </div>
+                          </div> 
+
+                          <div class="review-card">
+                                  <p>
+                                    “Absolutely love this gym! The facilities are top-notch and always impeccably maintained,
+                                   thanks to the attentive and welcoming staff. It's a complete package for anyone looking to elevate their fitness journey!"
+                                  </p>
+
+
+                                  <div class="review-profile">
+                                    <img src="assets/josephine.svg" title="Josephine Owens">
+                                        
+                                      <div class="info">
+                                         <h5>Josephine Owens</h5>
+
+                                         <svg width="96" height="16" viewBox="0 0 96 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" fill="#FFCD03"/>
+                                            <path d="M28 0L29.7961 5.52786H35.6085L30.9062 8.94427L32.7023 14.4721L28 11.0557L23.2977 14.4721L25.0938 8.94427L20.3915 5.52786H26.2039L28 0Z" fill="#FFCD03"/>
+                                            <path d="M48 0L49.7961 5.52786H55.6085L50.9062 8.94427L52.7023 14.4721L48 11.0557L43.2977 14.4721L45.0938 8.94427L40.3915 5.52786H46.2039L48 0Z" fill="#FFCD03"/>
+                                            <path d="M68 0L69.7961 5.52786H75.6085L70.9062 8.94427L72.7023 14.4721L68 11.0557L63.2977 14.4721L65.0938 8.94427L60.3915 5.52786H66.2039L68 0Z" fill="#FFCD03"/>
+                                            <path d="M88 0L89.7961 5.52786H95.6085L90.9062 8.94427L92.7023 14.4721L88 11.0557L83.2977 14.4721L85.0938 8.94427L80.3915 5.52786H86.2039L88 0Z" fill="#FFCD03"/>
+                                        </svg>
+                                            
+                                      </div>
+                                  </div>
+                          </div>   
+                          
+                          <div class="review-card">
+                                      <p>
+                                        “An exceptional fitness destination! The facility is top-notch, impeccably maintained by a welcoming staff. 
+                                        The membership fees are reasonable considering the abundance of offerings - from yoga and spinning to HIIT and aerobics,
+                                         all led by expert instructors. Truly a holistic fitness experience!”
+
+                                      </p>
+ 
+
+                                  <div class="review-profile">
+                                    <img src="assets/ibrahim.svg" title="Ibrahim Balogun">
+                                        
+                                      <div class="info">
+                                         <h5>Ibrahim Balogun</h5>
+
+                                         <svg width="96" height="16" viewBox="0 0 96 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" fill="#FFCD03"/>
+                                            <path d="M28 0L29.7961 5.52786H35.6085L30.9062 8.94427L32.7023 14.4721L28 11.0557L23.2977 14.4721L25.0938 8.94427L20.3915 5.52786H26.2039L28 0Z" fill="#FFCD03"/>
+                                            <path d="M48 0L49.7961 5.52786H55.6085L50.9062 8.94427L52.7023 14.4721L48 11.0557L43.2977 14.4721L45.0938 8.94427L40.3915 5.52786H46.2039L48 0Z" fill="#FFCD03"/>
+                                            <path d="M68 0L69.7961 5.52786H75.6085L70.9062 8.94427L72.7023 14.4721L68 11.0557L63.2977 14.4721L65.0938 8.94427L60.3915 5.52786H66.2039L68 0Z" fill="#FFCD03"/>
+                                            <path d="M88 0L89.7961 5.52786H95.6085L90.9062 8.94427L92.7023 14.4721L88 11.0557L83.2977 14.4721L85.0938 8.94427L80.3915 5.52786H86.2039L88 0Z" fill="#A1A3A8"/>
+                                        </svg>
+                                            
+                                            
+                                      </div>
+                                  </div>
+                          </div>    
+                          
+                                                  
+                          <div class="review-card">
+                                  <p>“Great place to work out. Excellent facility that is highly maintained by the friendly staff.
+                                     Fees are okay for how much you get. Lots of other activities like yoga, spinning, HIIT,
+                                      aerobics all taught by highly trained instructors come with your monthly subscription.”
+                                    </p>
+
+                                  <div class="review-profile">
+                                    <img src="assets/emeka.svg" title="Emeka Albert">
+                                        
+                                      <div class="info">
+                                         <h5>Emeka Albert</h5>
+                                         <svg width="96" height="16" viewBox="0 0 96 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" fill="#FFCD03"/>
+                                            <path d="M28 0L29.7961 5.52786H35.6085L30.9062 8.94427L32.7023 14.4721L28 11.0557L23.2977 14.4721L25.0938 8.94427L20.3915 5.52786H26.2039L28 0Z" fill="#FFCD03"/>
+                                            <path d="M48 0L49.7961 5.52786H55.6085L50.9062 8.94427L52.7023 14.4721L48 11.0557L43.2977 14.4721L45.0938 8.94427L40.3915 5.52786H46.2039L48 0Z" fill="#FFCD03"/>
+                                            <path d="M68 0L69.7961 5.52786H75.6085L70.9062 8.94427L72.7023 14.4721L68 11.0557L63.2977 14.4721L65.0938 8.94427L60.3915 5.52786H66.2039L68 0Z" fill="#FFCD03"/>
+                                            <path d="M88 0L89.7961 5.52786H95.6085L90.9062 8.94427L92.7023 14.4721L88 11.0557L83.2977 14.4721L85.0938 8.94427L80.3915 5.52786H86.2039L88 0Z" fill="#FFCD03"/>
+                                        </svg>
+                                            
+                                      </div>
+                                  </div>
+                          </div> 
+
+
+
+                      </div>
+                     </div>
+                  </div>
+                      
+              </div>
+           </section>
+    </main>
+
+
+      <footer>
+          <div class="footer-logo">
+                 <img src="assets/header-logo.svg" alt="logo">
+          </div>
+          <div class="footer-content">
+              <span>Leading and fastest growing fitness chain</span>
+              <div class="social-links">
+
+                <div class="icon">
+                       <!--social media icons -->
+                </div>    
+
+                <div class="icon">
+      
+                    </div>
+
+
+                    <div class="icon">
+
+                    </div>
+                        
+                    <div class="icon">
+                  
+                    </div>         
+              </div>
+
+              <ul class="footer-links">
+                 <li><a href="#">Gym Houses</a></li> 
+                 <li><a href="#">Corporate</a></li>
+                <li><a href="#">Deals</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About us</a></li>
+
+              </ul>
+
+              <div class="copy">
+                &COPY; Coded by <a href="https://x.com/miraclejustice_">Miracle Justice</a>
+              </div>
+              
+          </div>
+      </footer>
+
+      <script src="script.js"></script>
+</body>
+
+</html>
