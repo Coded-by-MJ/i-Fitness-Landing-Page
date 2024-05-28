@@ -17,7 +17,7 @@
 
 # Links
 
-- Live Site URL: [Click to view Live Site](https://mj-filmcenter.netlify.app/)
+- Live Site URL: [Click to view Live Site](https://i-fitness-landing-page.netlify.app/)
 
 
 
@@ -31,7 +31,7 @@
 
 
 ### Netlify Status
-[![Netlify Status](https://api.netlify.com/api/v1/badges/df1d601c-f303-4f55-b360-755e76072a17/deploy-status)](https://app.netlify.com/sites/mj-filmcenter/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/df1d601c-f303-4f55-b360-755e76072a17/deploy-status)](https://i-fitness-landing-page.netlify.app/deploys)
 
 ## Author
 
