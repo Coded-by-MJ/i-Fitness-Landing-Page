@@ -234,9 +234,8 @@ function nextCard() {
     if (remainingScroll > 0) {
         // If there's remaining space, scroll by the specified amount
         carousel.scrollLeft(scrollLeft + scrollAmount);
-    } else {
-        // If at the end, scroll back to the beginning
-        carousel.scrollLeft(0);
+    }else{
+        return;
     }
 }
 
@@ -256,9 +255,7 @@ function prevCard() {
         // If not at the beginning, scroll by the specified amount
         carousel.scrollLeft(scrollLeft - scrollAmount);
     } else {
-        // If at the beginning, scroll to the end
-        const carouselWidth = carousel[0].scrollWidth;
-        carousel.scrollLeft(carouselWidth);
+         return;
     }
 }
 
